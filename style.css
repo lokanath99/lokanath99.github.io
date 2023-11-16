@@ -5,3 +5,21 @@
 .navbar:hover{
     cursor: pointer;
 }
+
+.nav-item{
+    transition-duration: 1s;
+}
+
+.nav-item:hover{
+    /* transition-duration: 1s; */
+    transform: rotate(0.03turn);
+}
+
+.image-fluid{
+    transition-duration: 1s;
+
+}
+
+.image-fluid:hover{
+    transform: scale(1.05);
+}
