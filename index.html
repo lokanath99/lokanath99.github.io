@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>S Lokanath | Portfolio</title>
+        <link
+            rel="icon"
+            href="data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+  <circle cx='50' cy='50' r='48' fill='%230A84FF'/>
+  <text x='50%' y='55%' text-anchor='middle' fill='white' font-size='50' font-family='Arial' dy='.3em'>LS</text>
+</svg>"
+        />
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <!-- In your HTML head -->
+        <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- particles.js library -->
+        <!-- Vanta.js & Three.js -->
+        <!-- GLightbox CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+        />
+
+        <!-- GLightbox JS -->
+        <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+        <link href="./styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Vanta background -->
+        <div id="vanta-bg"></div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#hero">Lokanath S</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <div class="site-content container py-5 mt-5">
+            <header class="row align-items-center mt-4" id="hero">
+                <!-- Left: Text Content -->
+                <div class="col-md-7">
+                    <h1 class="mb-3">Hi, I'm Lokanath S</h1>
+                    <p class="lead mb-3">
+                        ServiceNow Developer | Aspiring Full Stack | AI ML
+                        Enthusiast
+                    </p>
+
+                    <p>
+                        I'm a passionate developer with 3 years of experience as
+                        a ServiceNow Developer, specializing in implementing and
+                        optimizing Agile workflows and building clean, efficient
+                        ITSM solutions. I love solving complex problems and
+                        bringing robust debugging skills to every project.
+                        Beyond ServiceNow, I've been expanding into full-stack
+                        development with Node.js, MongoDB, React.js, and Flutter
+                        for over 3 years. I thrive on continuous learning and
+                        hold CSA and CSD certifications. Currently, I'm pursuing
+                        my Master's in Artificial Intelligence and Machine
+                        Learning (AI & ML) at BITS Pilani to deepen my skills in
+                        intelligent, data-driven solutions. By combining AI & ML
+                        with my ServiceNow and full-stack experience, I'm driven
+                        to build smarter, adaptive workflows that deliver real
+                        value - growing into a well-rounded cloud and full-stack
+                        professional, one line of code at a time.
+                    </p>
+                    <div class="text-center mt-4">
+                        <a
+                            href="./Assets/resume.pdf"
+                            download
+                            class="btn text-center"
+                        >
+                            <i class="fas fa-download"></i> Download My Resume
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Photo -->
+                <div class="col-md-5 text-center">
+                    <div class="triangle-photo-wrapper">
+                        <img
+                            src="Assets/loka-photo.jpeg"
+                            alt="Lokanath S"
+                            class="triangle-photo"
+                        />
+                    </div>
+                </div>
+
+                <div class="col mt-4">
+                    <div class="tech-icons mt-4">
+                        <div class="tech-logo-wrapper">
+                            <img
+                                src="./Assets/serviceno-logo.png"
+                                alt="ServiceNow"
+                                class="tech-logo"
+                            />
+                        </div>
+                        <div class="tech-logo-wrapper">
+                            <img
+                                src="./Assets/nodejs-logo.png"
+                                alt="Node.js"
+                                class="tech-logo"
+                            />
+                        </div>
+                        <div class="tech-logo-wrapper">
+                            <img
+                                src="./Assets/mongodb-logo.png"
+                                alt="MongoDB"
+                                class="tech-logo"
+                            />
+                        </div>
+                        <div class="tech-logo-wrapper">
+                            <img
+                                src="./Assets/reactjs-logo.png"
+                                alt="React.js"
+                                class="tech-logo"
+                            />
+                        </div>
+                        <div class="tech-logo-wrapper">
+                            <img
+                                src="./Assets/flutter-logo.png"
+                                alt="Flutter"
+                                class="tech-logo"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section
+                id="about"
+                class="site-content container py-50 mt-5"
+                data-aos="fade-up"
+            >
+                <div class="row align-items-center">
+                    <div class="col-mb-12 col-lg-6 text-center">
+                        <div class="photo-stack">
+                            <div class="photo-card company">
+                                <img
+                                    src="Assets/cognizant.jpg"
+                                    alt="Working at Cognizant"
+                                />
+                                <span>My Company</span>
+                            </div>
+                            <div class="photo-card masters">
+                                <img
+                                    src="Assets/bits.webp"
+                                    alt="Masters at BITS"
+                                />
+                                <span>My Masters</span>
+                            </div>
+                            <div class="photo-card hiking">
+                                <img
+                                    src="Assets/my-photo.jpg"
+                                    alt="Hiking Adventures"
+                                />
+                                <span>Hiking</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text Content -->
+                    <div class="col-md-12 col-lg-6">
+                        <h2 class="mb-4">About Me</h2>
+                        <p>
+                            Thank you for taking the time to explore my work!
+                            I'm not only passionate about building efficient
+                            solutions but also about growing with a team. I
+                            enjoy mentoring new joiners, collaborating to solve
+                            complex problems, and sharing knowledge to help
+                            everyone thrive. I believe great results come from
+                            great teamwork - and I'm excited to bring that
+                            mindset to your organization.
+                        </p>
+
+                        <p>
+                            A certified <strong>CSA</strong> and
+                            <strong>CAD</strong> professional, I'm currently
+                            pursuing my M.Tech in AIML from BITS Pilani. I
+                            thrive on <strong>continuous learning</strong> and
+                            enjoy solving complex problems through logical
+                            thinking and collaboration.
+                        </p>
+
+                        <p>
+                            I'm passionate about building modern web and mobile
+                            applications too - with over
+                            <strong>3 years</strong> of hands-on experience in
+                            <strong>Node.js, MongoDB, React.js,</strong> and
+                            <strong>Flutter</strong>. I love mentoring aspiring
+                            developers through pro bono sessions, helping them
+                            get real-world exposure in MERN, Flutter, and Flask
+                            stacks.
+                        </p>
+
+                        <p>
+                            Outside of tech, you'll find me strumming my guitar,
+                            hiking mountains (including Kedarkantha at 12,500
+                            ft!), practicing yoga, cycling, or exploring new
+                            places.
+                        </p>
+
+                        <p class="mt-4">
+                            📧
+                            <a href="mailto:lokanath1912@gmail.com"
+                                >lokanath1912@gmail.com</a
+                            >
+                            | 📍 Bengaluru, India |
+                            <a
+                                href="https://www.linkedin.com/in/lokanath-s-a48720194/"
+                                target="_blank"
+                                >LinkedIn</a
+                            >
+                        </p>
+                    </div>
+
+                    <!-- Optional Photo / Visual Element -->
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section
+                id="projects"
+                class="site-content container py-5 mt-5"
+                data-aos="fade-up"
+            >
+                <div class="row align-items-center mb-4">
+                    <!-- Text Content -->
+                    <div class="col-md-12">
+                        <h2 class="mb-4">Projects</h2>
+                        <h5 class="mb-4">Next Experience UI Themes</h5>
+                        <p>
+                            One of my recent projects involved designing and
+                            implementing custom themes for ServiceNow's Next
+                            Experience UI. I created multiple theme variants,
+                            including Dark Mode, Light Mode, and a fully Branded
+                            Workspace. Each theme is designed for better user
+                            accessibility, visual consistency, and an enhanced
+                            developer experience.
+                        </p>
+                        <p>
+                            These themes not only align with corporate branding
+                            guidelines but also ensure a smooth and modern
+                            look-and-feel for ServiceNow users across different
+                            devices.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <section id="themes-gallery" class="container">
+                            <h5>Themes Gallery</h5>
+                            <p class="mb-4">
+                                A glimpse of the beautiful themes I designed in
+                                Next Experience UI.
+                            </p>
+                            <div class="row g-3">
+                                <div class="col-6 col-md-4">
+                                    <a
+                                        href="Assets/theme1.png"
+                                        class="glightbox"
+                                        data-gallery="themes"
+                                        title="Click Image to View"
+                                    >
+                                        <img
+                                            src="Assets/theme1.png"
+                                            class="img-fluid rounded"
+                                            alt="Crimson Cream Theme"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <a
+                                        href="Assets/theme1.2.png"
+                                        class="glightbox"
+                                        data-gallery="themes"
+                                        title="Click Image to View"
+                                    >
+                                        <img
+                                            src="Assets/theme1.2.png"
+                                            class="img-fluid rounded"
+                                            alt="Crimson Cream Theme"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <a
+                                        href="Assets/theme1.3.png"
+                                        class="glightbox"
+                                        data-gallery="themes"
+                                        title="Click Image to View"
+                                    >
+                                        <img
+                                            src="Assets/theme1.3.png"
+                                            class="img-fluid rounded"
+                                            alt="Crimson Cream Theme"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <a
+                                        href="Assets/theme2.png"
+                                        class="glightbox"
+                                        data-gallery="themes"
+                                        title="Click Image to View"
+                                    >
+                                        <img
+                                            src="Assets/theme2.png"
+                                            class="img-fluid rounded"
+                                            alt="Rosemerry & Olive Theme"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <a
+                                        href="Assets/theme2.2.png"
+                                        class="glightbox"
+                                        data-gallery="themes"
+                                        title="Click Image to View"
+                                    >
+                                        <img
+                                            src="Assets/theme2.2.png"
+                                            class="img-fluid rounded"
+                                            alt="Branded Workspace"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <a
+                                        href="Assets/theme2.3.png"
+                                        class="glightbox"
+                                        data-gallery="themes"
+                                        title="Click Image to View"
+                                    >
+                                        <img
+                                            src="Assets/theme2.3.png"
+                                            class="img-fluid rounded"
+                                            alt="Branded Workspace"
+                                        />
+                                    </a>
+                                </div>
+                                <!-- Add more images as needed -->
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="row align-items-center mt-5" data-aos="fade-up">
+                    <!-- Text Content -->
+                    <div class="col-md-7">
+                        <h5 class="mb-3">
+                            Vendor Management Workspace: Engagement Flow
+                            Formatter
+                        </h5>
+                        <p>
+                            I designed and implemented an intuitive stepper
+                            counter for the engagement flow in a custom Vendor
+                            Management Workspace. This feature guides users
+                            through each phase of vendor onboarding and
+                            collaboration, ensuring clear visibility into
+                            progress, tasks, and approvals. The result is a more
+                            transparent, efficient, and user-friendly process
+                            for both internal teams and vendors.
+                        </p>
+                        <p>
+                            Beyond this, I have deep hands-on experience working
+                            with ServiceNow's UI Builder, including configuring
+                            and customizing a wide range of components to
+                            deliver tailored workspace experiences. I'm
+                            well-versed in data binding, managing client states,
+                            and writing client scripts in UI Builder to bring
+                            dynamic, responsive interfaces to life. This project
+                            is just one example of my ability to leverage the
+                            full potential of Next Experience UI to build
+                            modern, maintainable, and impactful business
+                            solutions.
+                        </p>
+                    </div>
+
+                    <!-- Image Card -->
+                    <div class="col-md-5 text-center">
+                        <a
+                            href="Assets/stepper-counter.png"
+                            class="glightbox"
+                            data-gallery="vendor"
+                        >
+                            <div class="card shadow-sm">
+                                <img
+                                    src="Assets/stepper-counter.png"
+                                    class="card-img-top"
+                                    alt="Stepper Counter Engagement Flow"
+                                />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Custom stepper counter for vendor
+                                        engagement stages
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="py-5" data-aos="fade-up">
+                <div class="container">
+                    <h2 class="mb-4 text-center" style="color: var(--accent)">
+                        Get In Touch
+                    </h2>
+                    <div class="row align-items-center">
+                        <!-- thankyou Note -->
+                        <div class="col-md-12 col-lg-6 text-center">
+                            <div
+                                class="p-4 shadow rounded h-100 d-flex flex-column justify-content-center thanks-card"
+                            >
+                                <h3 class="mb-3">Thank You!</h3>
+                                <p class="mb-0 fs-5">
+                                    I truly appreciate you taking the time to
+                                    reach out. <br />
+                                    Your thoughts and ideas are important to me
+                                    - I look forward to connecting and exploring
+                                    how we can make something amazing together!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <div class="col-md-12 col-lg-6 mb-4">
+                            <!-- Success Alert -->
+                            <div
+                                id="contactAlert"
+                                class="alert alert-success d-none"
+                                role="alert"
+                            >
+                                ✅ Your message has been sent! Thank you for
+                                reaching out.
+                            </div>
+
+                            <form
+                                id="contactForm"
+                                action="https://formsubmit.co/lokanath1912@gmail.com"
+                                method="POST"
+                            >
+                                <div class="mb-3">
+                                    <label for="name" class="form-label"
+                                        >Your Name</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="name"
+                                        placeholder="John Doe"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label"
+                                        >Your Email</label
+                                    >
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                        placeholder="john@example.com"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="message" class="form-label"
+                                        >Your Message</label
+                                    >
+                                    <textarea
+                                        class="form-control"
+                                        id="message"
+                                        rows="5"
+                                        placeholder="Write your message here..."
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary px-4"
+                                >
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a
+                            href="./Assets/resume.pdf"
+                            download
+                            class="btn text-center"
+                        >
+                            <i class="fas fa-download"></i> Download My Resume
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center py-4 glassy-footer">
+            <p class="mb-2">&copy; 2025 Lokanath S</p>
+            <div class="social-icons">
+                <a
+                    href="https://www.linkedin.com/in/lokanath-s-a48720194"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                    href="https://github.com/lokanath99"
+                    target="_blank"
+                    aria-label="GitHub"
+                >
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:lokanath1912@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
