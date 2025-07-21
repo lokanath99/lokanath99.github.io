@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="mobile-web-app-capable" content="yes" />
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
+
         <title>S Lokanath | Portfolio</title>
         <link
             rel="icon"
-            href="data:image/svg+xml,
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-  <circle cx='50' cy='50' r='48' fill='%230A84FF'/>
-  <text x='50%' y='55%' text-anchor='middle' fill='white' font-size='50' font-family='Arial' dy='.3em'>LS</text>
-</svg>"
+            href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%230A84FF'/><text x='50%' y='55%' text-anchor='middle' fill='white' font-size='50' font-family='Arial' dy='.3em'>LS</text></svg>"
         />
         <!-- Bootstrap CSS -->
         <link
@@ -42,6 +43,12 @@
         />
 
         <link href="./styles.css" rel="stylesheet" />
+
+        <!-- iOS web app icon -->
+        <link rel="apple-touch-icon" href="Assets/loka-photo.jpeg" />
+        <!-- iOS status bar style -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     </head>
     <body>
         <!-- Vanta background -->
@@ -257,13 +264,14 @@
                             </li>
                             <li>
                                 <a
-                                    href="Assets/certificates/bits_id.pdf"
+                                    href="Assets/certificates/Developer_core_suite_mc.pdf"
                                     target="_blank"
                                     class="certificate-link"
                                     ><i
-                                        class="bi bi-mortarboard-fill text-primary me-1"
+                                        class="bi bi-patch-check-fill text-primary me-1"
                                     ></i>
-                                    Pursuing M.Tech - AI & ML at BITS Pilani
+                                    Suite Certification - Application Developer
+                                    Core Skills
                                 </a>
                             </li>
                         </ul>
@@ -536,6 +544,7 @@
                                         class="form-control"
                                         id="name"
                                         placeholder="John Doe"
+                                        name="name"
                                         required
                                     />
                                 </div>
@@ -546,6 +555,7 @@
                                     >
                                     <input
                                         type="email"
+                                        name="email"
                                         class="form-control"
                                         id="email"
                                         placeholder="john@example.com"
@@ -561,6 +571,7 @@
                                         class="form-control"
                                         id="message"
                                         rows="5"
+                                        name="message"
                                         placeholder="Write your message here..."
                                         required
                                     ></textarea>

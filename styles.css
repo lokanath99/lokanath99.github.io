@@ -43,6 +43,8 @@ html,
 body {
     height: 100%;
     margin: 0;
+    -webkit-overflow-scrolling: touch;
+    /* iOS smooth scrolling */
     /* overflow: hidden; */
     /* Optional: prevents scrolling if you want fixed background */
 }
@@ -448,6 +450,8 @@ body {
     overflow: auto;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(4px);
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
 }
 
 /* Modal content styling */
@@ -462,6 +466,9 @@ body {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     position: relative;
     animation: fadeIn 0.3s ease-in-out;
+    max-height: 90vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* Glassmorphism helper */
@@ -520,4 +527,41 @@ body {
 
 .glassy-footer p {
     margin: 0;
+}
+
+/* Touch target minimum size for buttons/links */
+button,
+.btn,
+.navbar .nav-link,
+a {
+    min-width: 44px;
+    min-height: 44px;
+    /* Add padding if needed for easier tapping */
+}
+
+/* Glassmorphism Safari fix */
+.glass,
+.glassy-footer,
+.resume-modal-content {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+/* Input appearance for iOS */
+input,
+textarea,
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 1rem;
+}
+
+/* Prevent iOS input zoom on focus */
+@media screen and (max-width: 767px) {
+
+    input,
+    textarea,
+    select {
+        font-size: 16px;
+    }
 }
